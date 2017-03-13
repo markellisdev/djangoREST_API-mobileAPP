@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Fishes</title>
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	</head>
+	<body>
+		{% url 'fishes:fish' as home %}
+		<div class="content container">
+		    <div class="row">
+		        <div class="col-md-8">
+		        {% block content %}
+		        {% endblock %}
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>

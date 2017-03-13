@@ -1,0 +1,17 @@
+{% extends 'fishes/base.html' %}
+{% block content %}
+<p>This is the fishes template</p>
+
+{% if fishes %}
+
+<ul>
+	{% for fish in fishes %}
+		<li>{{ fish.name }}</li>
+	{% endfor %}
+</ul>
+
+{% else %}
+	<p>No fish are swimming here.</p>
+{% endif %}
+
+{% endblock %}
